@@ -1,0 +1,28 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["custom/clock", "cpu", "memory"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["network", "pulseaudio", "tray"],
+
+  "cpu": {
+    "format": "🧠 {usage}%"
+  },
+  "memory": {
+    "format": "💾 {used:0.1f}G"
+  },
+  "network": {
+    "format-wifi": "📶 {essid}",
+    "format-ethernet": "🌐 {ipaddr}",
+    "format-disconnected": "🚫"
+  },
+  "pulseaudio": {
+    "format": "🔊 {volume}%",
+    "on-click": "pavucontrol"
+  },
+  "custom/clock": {
+    "exec": "~/.config/waybar/scripts/clock.sh",
+    "return-type": "json",
+    "interval": 0
+  }
+}

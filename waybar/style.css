@@ -1,0 +1,25 @@
+* {
+  font-family: JetBrains Nerd Font, sans-serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 8px;
+  padding: 0 6px;
+}
+
+window#waybar {
+  background-color: rgba(20, 20, 20, 0.85);
+  color: white;
+}
+
+#workspaces button {
+  padding: 0 6px;
+  color: #ccc;
+}
+
+#workspaces button.active {
+  color: #00ffcc;
+}
+#custom-clock {
+  font-size: 17px;
+  padding: 0 20px;
+}
